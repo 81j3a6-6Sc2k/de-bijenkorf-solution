@@ -1,0 +1,14 @@
+@import '../../styles/common.scss';
+
+.button-component {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 4px 14px;
+    border-radius: $border-radius;
+    color: $color-black;
+
+    &.button-theme-dark {
+        background-color: $color-gray-2;
+        color: $color-white;
+    }
+}

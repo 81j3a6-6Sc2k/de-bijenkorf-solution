@@ -1,0 +1,23 @@
+@import '../../styles/common.scss';
+
+.order-details-component {
+    display: block;
+    padding: $spacing-lg $spacing-md;
+}
+
+.order-details-row {
+    span:first-of-type {
+        margin-right: $spacing-sm;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: $color-black;
+        
+        &::after {
+            content: ':';
+        }
+    }
+
+    span:last-of-type {
+        color: $color-gray-2;
+    }
+}

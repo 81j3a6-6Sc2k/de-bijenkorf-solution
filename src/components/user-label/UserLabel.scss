@@ -1,0 +1,16 @@
+@import '../../styles/common.scss';
+
+.user-label-component {
+    display: inline-block;
+    text-align: center;
+
+    div:first-of-type {
+        font-weight: bold;
+        font-size: $font-md;
+    }
+
+    div:last-of-type {
+        color: $color-gray-2;
+        font-size: $font-sm;
+    }
+}

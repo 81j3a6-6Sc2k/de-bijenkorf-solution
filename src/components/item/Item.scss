@@ -1,0 +1,65 @@
+@import '../../styles/common.scss';
+
+.item-component {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 $spacing-md;
+    padding: $spacing-md 0;
+    border-bottom: solid 1px $color-gray-1;
+}
+
+.item-status {
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    max-width: 28px;
+    background-color: $color-white;
+    color: $color-white;
+    border: solid 3px $color-orange;
+
+    &.item-reserved {
+        background-color: $color-orange;
+    }
+
+    i {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20%);
+    }
+}
+
+.item-icon {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 60px;
+    max-width: 60px;
+    height: 60px;
+}
+
+.item-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: $spacing-md;
+
+    div:first-of-type {
+        display: block;
+        font-weight: bold;
+        font-size: $font-lg;
+        margin-bottom: $spacing-sm;
+    }
+
+    div:last-of-type {
+        display: block;
+        font-size: $font-md;
+        color: $color-gray-2;
+    }
+}
+
+.item-more {
+    display: inline-block;
+}

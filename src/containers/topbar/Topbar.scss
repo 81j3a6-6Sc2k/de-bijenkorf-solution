@@ -1,0 +1,12 @@
+@import '../../styles/common.scss';
+
+.topbar-container {
+    display: block;
+    padding: $spacing-sm;
+    border-bottom: solid 1px $color-gray-1;
+}
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+}
